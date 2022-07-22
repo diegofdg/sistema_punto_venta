@@ -11,7 +11,7 @@ namespace Sol_PuntoVenta.Datos
 {
     public class D_Punto_Venta
     {
-        public DataTable Listado_pv(string cTexto) 
+        public DataTable Listado_pv(string cTexto)
         {
             SqlDataReader Resultado;
             DataTable Tabla = new DataTable();
@@ -19,17 +19,48 @@ namespace Sol_PuntoVenta.Datos
             try
             {
                 SqlCon = Conexion.getInstancia().CrearConexion();
-                SqlCommand comando = new SqlCommand("procedimiento", SqlCon);
+                SqlCommand Comando = new SqlCommand("USP_Listado_pv", SqlCon);
+                Comando.CommandType = CommandType.StoredProcedure;
+                Comando.Parameters.Add("@cTexto", SqlDbType.VarChar).Value = cTexto;
+                SqlCon.Open();
+                Resultado = Comando.ExecuteReader();
+                Tabla.Load(Resultado);
+                return Tabla;
             }
             catch (Exception ex)
             {
-
                 throw ex;
             }
             finally
             {
                 if(SqlCon.State == ConnectionState.Open) SqlCon.Close();
             }
+        }
+
+        public string Guardar_pv(int nOpcion, E_Punto_Venta oPropiedad)
+        {
+            string Rpta = "";
+            SqlConnection SqlCon = new SqlConnection();
+            try
+            {
+                SqlCon = Conexion.getInstancia().CrearConexion();
+                SqlCommand Comando = new SqlCommand("USP_Guardar_pv", SqlCon);
+                Comando.CommandType = CommandType.StoredProcedure;
+                Comando.Parameters.Add("@nOpcion", SqlDbType.Int).Value = nOpcion;
+                Comando.Parameters.Add("@nCodigo", SqlDbType.Int).Value = oPropiedad.Codigo_pv;
+                Comando.Parameters.Add("@cDescripcion", SqlDbType.VarChar).Value = oPropiedad.Descripcion_pv;
+                SqlCon.Open();
+                Rpta = Comando.ExecuteNonQuery() >= 1 ? "OK" : "No se pudo ingresar el registro";
+            }
+            catch (Exception ex)
+            {
+                Rpta = ex.Message;
+            }
+            finally
+            {
+                if(SqlCon.State != ConnectionState.Open) SqlCon.Close();
+            }
+            return Rpta;
         }
     }
 }
