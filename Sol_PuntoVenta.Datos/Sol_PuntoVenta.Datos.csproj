@@ -43,5 +43,11 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sol_PuntoVenta.Entidades\Sol_PuntoVenta.Entidades.csproj">
+      <Project>{0057a633-5a55-4588-a062-f7153a862ff1}</Project>
+      <Name>Sol_PuntoVenta.Entidades</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

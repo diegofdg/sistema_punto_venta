@@ -70,5 +70,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sol_PuntoVenta.Entidades\Sol_PuntoVenta.Entidades.csproj">
+      <Project>{0057a633-5a55-4588-a062-f7153a862ff1}</Project>
+      <Name>Sol_PuntoVenta.Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sol_PuntoVenta.Negocio\Sol_PuntoVenta.Negocio.csproj">
+      <Project>{2ed149b5-cd91-4549-b864-3c9e56eca2fd}</Project>
+      <Name>Sol_PuntoVenta.Negocio</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
