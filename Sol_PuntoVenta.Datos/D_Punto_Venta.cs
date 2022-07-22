@@ -62,5 +62,29 @@ namespace Sol_PuntoVenta.Datos
             }
             return Rpta;
         }
+
+        public string Eliminar_pv(int nCodigo)
+        {
+            string Rpta = "";
+            SqlConnection SqlCon = new SqlConnection();
+            try
+            {
+                SqlCon = Conexion.getInstancia().CrearConexion();
+                SqlCommand Comando = new SqlCommand("USP_Eliminar_pv", SqlCon);
+                Comando.CommandType = CommandType.StoredProcedure;
+                Comando.Parameters.Add("@nCodigo", SqlDbType.Int).Value = nCodigo;
+                SqlCon.Open();
+                Rpta = Comando.ExecuteNonQuery() >= 1 ? "OK" : "No se pudo eliminar el registro";
+            }
+            catch (Exception ex)
+            {
+                Rpta = ex.Message;
+            }
+            finally
+            {
+                if (SqlCon.State != ConnectionState.Open) SqlCon.Close();
+            }
+            return Rpta;
+        }
     }
 }
