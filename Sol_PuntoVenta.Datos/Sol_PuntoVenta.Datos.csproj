@@ -45,6 +45,7 @@
     <Compile Include="D_Familias.cs" />
     <Compile Include="D_Marcas.cs" />
     <Compile Include="D_Punto_Venta.cs" />
+    <Compile Include="D_Unidades_Medidas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
