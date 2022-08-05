@@ -36,7 +36,6 @@ namespace Sol_PuntoVenta.Datos
             }
             catch (Exception ex)
             {
-
                 Cadena = null;
                 throw ex;
             }

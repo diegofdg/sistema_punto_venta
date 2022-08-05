@@ -8,7 +8,6 @@ using System.Data.SqlClient;
 using Sol_PuntoVenta.Entidades;
 using Sol_PuntoVenta.Datos;
 
-
 namespace Sol_PuntoVenta.Negocio
 {
     public class N_Punto_Venta
