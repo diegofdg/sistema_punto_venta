@@ -1,6 +1,6 @@
 ﻿namespace Sol_PuntoVenta.Presentacion
 {
-    partial class Frm_Marcas
+    partial class Frm_Area_Despacho
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Marcas));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Area_Despacho));
             this.Tbc_principal = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.Lbl_totalregistros = new System.Windows.Forms.Label();
@@ -40,6 +40,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.Dgv_Listado = new System.Windows.Forms.DataGridView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.Txt_impresora = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.Btn_retornar = new System.Windows.Forms.Button();
             this.Btn_guardar = new System.Windows.Forms.Button();
             this.Btn_cancelar = new System.Windows.Forms.Button();
@@ -91,7 +93,7 @@
             this.Lbl_totalregistros.AutoSize = true;
             this.Lbl_totalregistros.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl_totalregistros.ForeColor = System.Drawing.Color.DimGray;
-            this.Lbl_totalregistros.Location = new System.Drawing.Point(393, 277);
+            this.Lbl_totalregistros.Location = new System.Drawing.Point(570, 275);
             this.Lbl_totalregistros.Name = "Lbl_totalregistros";
             this.Lbl_totalregistros.Size = new System.Drawing.Size(103, 13);
             this.Lbl_totalregistros.TabIndex = 4;
@@ -152,12 +154,14 @@
             this.Dgv_Listado.Name = "Dgv_Listado";
             this.Dgv_Listado.ReadOnly = true;
             this.Dgv_Listado.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.Dgv_Listado.Size = new System.Drawing.Size(481, 195);
+            this.Dgv_Listado.Size = new System.Drawing.Size(658, 195);
             this.Dgv_Listado.TabIndex = 0;
             this.Dgv_Listado.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Dgv_Listado_CellDoubleClick);
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.Txt_impresora);
+            this.tabPage2.Controls.Add(this.label4);
             this.tabPage2.Controls.Add(this.Btn_retornar);
             this.tabPage2.Controls.Add(this.Btn_guardar);
             this.tabPage2.Controls.Add(this.Btn_cancelar);
@@ -171,12 +175,30 @@
             this.tabPage2.Text = "Mantenimiento";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // Txt_impresora
+            // 
+            this.Txt_impresora.Location = new System.Drawing.Point(116, 88);
+            this.Txt_impresora.MaxLength = 50;
+            this.Txt_impresora.Name = "Txt_impresora";
+            this.Txt_impresora.ReadOnly = true;
+            this.Txt_impresora.Size = new System.Drawing.Size(224, 20);
+            this.Txt_impresora.TabIndex = 8;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(44, 91);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(66, 13);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Impresora:(*)";
+            // 
             // Btn_retornar
             // 
             this.Btn_retornar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(153)))), ((int)(((byte)(117)))));
             this.Btn_retornar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_retornar.ForeColor = System.Drawing.Color.White;
-            this.Btn_retornar.Location = new System.Drawing.Point(267, 96);
+            this.Btn_retornar.Location = new System.Drawing.Point(287, 127);
             this.Btn_retornar.Name = "Btn_retornar";
             this.Btn_retornar.Size = new System.Drawing.Size(80, 27);
             this.Btn_retornar.TabIndex = 6;
@@ -190,7 +212,7 @@
             this.Btn_guardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(105)))), ((int)(((byte)(141)))));
             this.Btn_guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_guardar.ForeColor = System.Drawing.Color.White;
-            this.Btn_guardar.Location = new System.Drawing.Point(181, 96);
+            this.Btn_guardar.Location = new System.Drawing.Point(201, 127);
             this.Btn_guardar.Name = "Btn_guardar";
             this.Btn_guardar.Size = new System.Drawing.Size(80, 27);
             this.Btn_guardar.TabIndex = 5;
@@ -204,7 +226,7 @@
             this.Btn_cancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
             this.Btn_cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_cancelar.ForeColor = System.Drawing.Color.White;
-            this.Btn_cancelar.Location = new System.Drawing.Point(95, 96);
+            this.Btn_cancelar.Location = new System.Drawing.Point(115, 127);
             this.Btn_cancelar.Name = "Btn_cancelar";
             this.Btn_cancelar.Size = new System.Drawing.Size(80, 27);
             this.Btn_cancelar.TabIndex = 4;
@@ -215,8 +237,8 @@
             // 
             // Txt_descripcion
             // 
-            this.Txt_descripcion.Location = new System.Drawing.Point(94, 61);
-            this.Txt_descripcion.MaxLength = 50;
+            this.Txt_descripcion.Location = new System.Drawing.Point(116, 62);
+            this.Txt_descripcion.MaxLength = 30;
             this.Txt_descripcion.Name = "Txt_descripcion";
             this.Txt_descripcion.ReadOnly = true;
             this.Txt_descripcion.Size = new System.Drawing.Size(224, 20);
@@ -225,11 +247,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(30, 64);
+            this.label2.Location = new System.Drawing.Point(18, 65);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 13);
+            this.label2.Size = new System.Drawing.Size(92, 13);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Marcas: (*)";
+            this.label2.Text = "Área despacho:(*)";
             // 
             // Btn_nuevo
             // 
@@ -343,11 +365,11 @@
             this.label3.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label3.Location = new System.Drawing.Point(28, 13);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 14);
+            this.label3.Size = new System.Drawing.Size(143, 14);
             this.label3.TabIndex = 0;
-            this.label3.Text = "MARCAS";
+            this.label3.Text = "ÁREA DE DESPACHO";
             // 
-            // Frm_Marcas
+            // Frm_Area_Despacho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -359,10 +381,10 @@
             this.Controls.Add(this.Btn_actualizar);
             this.Controls.Add(this.Btn_nuevo);
             this.Controls.Add(this.Tbc_principal);
-            this.Name = "Frm_Marcas";
+            this.Name = "Frm_Area_Despacho";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Frm_Marcas";
-            this.Load += new System.EventHandler(this.Frm_Marcas_Load);
+            this.Text = "Frm_Area_Despacho";
+            this.Load += new System.EventHandler(this.Frm_Area_Despacho_Load);
             this.Tbc_principal.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -398,5 +420,7 @@
         private System.Windows.Forms.Panel Pnl_titulo_form;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label Lbl_totalregistros;
+        private System.Windows.Forms.TextBox Txt_impresora;
+        private System.Windows.Forms.Label label4;
     }
 }

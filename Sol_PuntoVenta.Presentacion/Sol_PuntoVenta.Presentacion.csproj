@@ -64,6 +64,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Frm_Area_Despacho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Area_Despacho.Designer.cs">
+      <DependentUpon>Frm_Area_Despacho.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_Familias.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +113,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet_DatosMaestros.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Reportes\Frm_Rpt_Area_Despacho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Frm_Rpt_Area_Despacho.Designer.cs">
+      <DependentUpon>Frm_Rpt_Area_Despacho.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reportes\Frm_Rpt_Familias.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,6 +156,9 @@
       <DependentUpon>Frm_Rpt_Unidades_Medidas.cs</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
+    <EmbeddedResource Include="Frm_Area_Despacho.resx">
+      <DependentUpon>Frm_Area_Despacho.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_Familias.resx">
       <DependentUpon>Frm_Familias.cs</DependentUpon>
     </EmbeddedResource>
@@ -172,6 +187,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Reportes\Frm_Rpt_Area_Despacho.resx">
+      <DependentUpon>Frm_Rpt_Area_Despacho.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reportes\Frm_Rpt_Familias.resx">
       <DependentUpon>Frm_Rpt_Familias.cs</DependentUpon>
     </EmbeddedResource>
@@ -190,6 +208,7 @@
     <EmbeddedResource Include="Reportes\Frm_Rpt_Unidades_Medidas.resx">
       <DependentUpon>Frm_Rpt_Unidades_Medidas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Rpt_Area_Despacho.rdlc" />
     <EmbeddedResource Include="Reportes\Rpt_Familias.rdlc" />
     <EmbeddedResource Include="Reportes\Rpt_Marcas.rdlc" />
     <EmbeddedResource Include="Reportes\Rpt_Mesas.rdlc" />
