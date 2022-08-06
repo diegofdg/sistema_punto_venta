@@ -19,7 +19,8 @@ namespace Sol_PuntoVenta.Presentacion
             //Application.Run(new Frm_Punto_Venta());
             //Application.Run(new Frm_Familias());
             //Application.Run(new Frm_Marcas());
-            Application.Run(new Frm_Unidades_Medidas());
+            //Application.Run(new Frm_Unidades_Medidas());
+            Application.Run(new Frm_SubFamilias());
         }
     }
 }
