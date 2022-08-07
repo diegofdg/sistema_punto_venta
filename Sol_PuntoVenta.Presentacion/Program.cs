@@ -23,7 +23,8 @@ namespace Sol_PuntoVenta.Presentacion
             //Application.Run(new Frm_SubFamilias());
             //Application.Run(new Frm_Mesas());
             //Application.Run(new Frm_Area_Despacho());
-            Application.Run(new Frm_Productos());
+            //Application.Run(new Frm_Productos());
+            Application.Run(new Frm_DashBoard());
         }
     }
 }
