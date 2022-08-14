@@ -241,5 +241,10 @@ namespace Sol_PuntoVenta.Presentacion
         {
             OpenForm(new Frm_Area_Despacho());
         }
+
+        private void PR_registrarpedido_Click(object sender, EventArgs e)
+        {
+            OpenForm(new Procesos.Frm_Registro_Pedidos());
+        }
     }
 }

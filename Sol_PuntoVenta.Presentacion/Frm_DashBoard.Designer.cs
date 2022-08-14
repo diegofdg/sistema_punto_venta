@@ -50,7 +50,7 @@
             this.Pnl_procesos = new System.Windows.Forms.Panel();
             this.iconButton3 = new FontAwesome.Sharp.IconButton();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.PR_registrarpedido = new FontAwesome.Sharp.IconButton();
             this.Btn_procesos = new FontAwesome.Sharp.IconButton();
             this.Bnt_Dashboard = new FontAwesome.Sharp.IconButton();
             this.Pnl_logo = new System.Windows.Forms.Panel();
@@ -457,7 +457,7 @@
             this.Pnl_procesos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(193)))), ((int)(((byte)(211)))));
             this.Pnl_procesos.Controls.Add(this.iconButton3);
             this.Pnl_procesos.Controls.Add(this.iconButton2);
-            this.Pnl_procesos.Controls.Add(this.iconButton1);
+            this.Pnl_procesos.Controls.Add(this.PR_registrarpedido);
             this.Pnl_procesos.Dock = System.Windows.Forms.DockStyle.Top;
             this.Pnl_procesos.Location = new System.Drawing.Point(0, 230);
             this.Pnl_procesos.Name = "Pnl_procesos";
@@ -509,27 +509,28 @@
             this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton2.UseVisualStyleBackColor = true;
             // 
-            // iconButton1
+            // PR_registrarpedido
             // 
-            this.iconButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconButton1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton1.FlatAppearance.BorderSize = 0;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton1.ForeColor = System.Drawing.Color.White;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.SquareUpRight;
-            this.iconButton1.IconColor = System.Drawing.Color.White;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.IconSize = 32;
-            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(0, 0);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.iconButton1.Size = new System.Drawing.Size(213, 40);
-            this.iconButton1.TabIndex = 2;
-            this.iconButton1.Text = "opción1";
-            this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton1.UseVisualStyleBackColor = true;
+            this.PR_registrarpedido.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.PR_registrarpedido.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PR_registrarpedido.FlatAppearance.BorderSize = 0;
+            this.PR_registrarpedido.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.PR_registrarpedido.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PR_registrarpedido.ForeColor = System.Drawing.Color.White;
+            this.PR_registrarpedido.IconChar = FontAwesome.Sharp.IconChar.SquareUpRight;
+            this.PR_registrarpedido.IconColor = System.Drawing.Color.White;
+            this.PR_registrarpedido.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.PR_registrarpedido.IconSize = 32;
+            this.PR_registrarpedido.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.PR_registrarpedido.Location = new System.Drawing.Point(0, 0);
+            this.PR_registrarpedido.Name = "PR_registrarpedido";
+            this.PR_registrarpedido.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.PR_registrarpedido.Size = new System.Drawing.Size(213, 40);
+            this.PR_registrarpedido.TabIndex = 2;
+            this.PR_registrarpedido.Text = "Registrar Pedido";
+            this.PR_registrarpedido.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.PR_registrarpedido.UseVisualStyleBackColor = true;
+            this.PR_registrarpedido.Click += new System.EventHandler(this.PR_registrarpedido_Click);
             // 
             // Btn_procesos
             // 
@@ -853,7 +854,7 @@
         private System.Windows.Forms.Panel Pnl_procesos;
         private FontAwesome.Sharp.IconButton iconButton3;
         private FontAwesome.Sharp.IconButton iconButton2;
-        private FontAwesome.Sharp.IconButton iconButton1;
+        private FontAwesome.Sharp.IconButton PR_registrarpedido;
         private FontAwesome.Sharp.IconButton Btn_procesos;
         private System.Windows.Forms.Panel Pnl_reportes;
         private FontAwesome.Sharp.IconButton iconButton5;
