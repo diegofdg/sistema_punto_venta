@@ -119,15 +119,15 @@ namespace Sol_PuntoVenta.Presentacion.Procesos
             {
                 Contenedor.Controls.Clear();
                 byte[] bImagen1 = new byte[0];
-                //bImagen1 = N_Registro_Pedidos.imagen_estado_me(1);
+                bImagen1 = N_Registro_Pedidos.imagen_estado_me(1);
                 MemoryStream ms1 = new MemoryStream(bImagen1);
 
                 byte[] bImagen2 = new byte[0];
-                //bImagen2 = N_Registro_Pedidos.imagen_estado_me(2);
+                bImagen2 = N_Registro_Pedidos.imagen_estado_me(2);
                 MemoryStream ms2 = new MemoryStream(bImagen2);
 
                 DataTable Tabla = new DataTable();
-                //Tabla = N_Registro_Pedidos.Mostrar_me_rp(this.nCodigo_pv);
+                Tabla = N_Registro_Pedidos.Mostrar_me_rp(this.nCodigo_pv);
 
                 for (int nFila = 0; nFila <= Tabla.Rows.Count - 1; nFila++)
                 {
@@ -150,17 +150,17 @@ namespace Sol_PuntoVenta.Presentacion.Procesos
                     Codigo_tu = this.nCodigo_tu;
 
                     //Creamos la mesa para cargar los datos
-                    //Controles.MiMesa oMesa = new Controles.MiMesa();
-                    //oMesa.Codigo = Codigo_me;
-                    //oMesa.Descripcion = Descripcion_me;
-                    //oMesa.Disponible = Estado;
-                    //oMesa.Codigo_pv = Codigo_pv;
-                    //oMesa.Descripcion_pv = Descripcion_pv;
-                    //oMesa.Codigo_us = Codigo_us;
-                    //oMesa.Codigo_tu = Codigo_tu;
+                    Controles.MiMesa oMesa = new Controles.MiMesa();
+                    oMesa.Codigo = Codigo_me;
+                    oMesa.Descripcion = Descripcion_me;
+                    oMesa.Disponible = Estado;
+                    oMesa.Codigo_pv = Codigo_pv;
+                    oMesa.Descripcion_pv = Descripcion_pv;
+                    oMesa.Codigo_us = Codigo_us;
+                    oMesa.Codigo_tu = Codigo_tu;
 
                     // Añadimos la mesa al Control
-                    //Contenedor.Controls.Add(oMesa);
+                    Contenedor.Controls.Add(oMesa);
                 }
             }
 
