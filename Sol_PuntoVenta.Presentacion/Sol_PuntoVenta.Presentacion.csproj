@@ -131,6 +131,12 @@
     <Compile Include="Frm_Unidades_Medidas.Designer.cs">
       <DependentUpon>Frm_Unidades_Medidas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Procesos\Frm_Cierres_Turnos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Frm_Cierres_Turnos.Designer.cs">
+      <DependentUpon>Frm_Cierres_Turnos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Procesos\Frm_Registro_Pedidos.cs">
       <SubType>Form</SubType>
     </Compile>
