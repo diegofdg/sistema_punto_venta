@@ -189,6 +189,7 @@ namespace Sol_PuntoVenta.Presentacion.Procesos
             this.Selecciona_item_pv();
             this.Estado_FechaTurno_pv(this.nCodigo_pv);
             Pnl_Listado_1.Visible = false;
+            flowLayoutPanel1.Controls.Clear();
             this.LlenarPuntoVenta(flowLayoutPanel1);
         }
 

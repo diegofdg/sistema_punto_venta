@@ -170,12 +170,12 @@
             // 
             // Txt_estado
             // 
-            this.Txt_estado.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Txt_estado.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold);
             this.Txt_estado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Txt_estado.Location = new System.Drawing.Point(684, 58);
             this.Txt_estado.Name = "Txt_estado";
             this.Txt_estado.ReadOnly = true;
-            this.Txt_estado.Size = new System.Drawing.Size(137, 26);
+            this.Txt_estado.Size = new System.Drawing.Size(137, 22);
             this.Txt_estado.TabIndex = 13;
             this.Txt_estado.Text = "Estado X";
             this.Txt_estado.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -193,12 +193,12 @@
             // 
             // Txt_turno
             // 
-            this.Txt_turno.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Txt_turno.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold);
             this.Txt_turno.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Txt_turno.Location = new System.Drawing.Point(541, 58);
             this.Txt_turno.Name = "Txt_turno";
             this.Txt_turno.ReadOnly = true;
-            this.Txt_turno.Size = new System.Drawing.Size(137, 26);
+            this.Txt_turno.Size = new System.Drawing.Size(137, 22);
             this.Txt_turno.TabIndex = 11;
             this.Txt_turno.Text = "Turno X";
             this.Txt_turno.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -216,12 +216,12 @@
             // 
             // Txt_fechatrabajo
             // 
-            this.Txt_fechatrabajo.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Txt_fechatrabajo.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold);
             this.Txt_fechatrabajo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Txt_fechatrabajo.Location = new System.Drawing.Point(362, 58);
             this.Txt_fechatrabajo.Name = "Txt_fechatrabajo";
             this.Txt_fechatrabajo.ReadOnly = true;
-            this.Txt_fechatrabajo.Size = new System.Drawing.Size(173, 26);
+            this.Txt_fechatrabajo.Size = new System.Drawing.Size(173, 22);
             this.Txt_fechatrabajo.TabIndex = 9;
             this.Txt_fechatrabajo.Text = "Fecha de trabajo X";
             this.Txt_fechatrabajo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -276,12 +276,12 @@
             // 
             // Txt_puntoventa
             // 
-            this.Txt_puntoventa.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Txt_puntoventa.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold);
             this.Txt_puntoventa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Txt_puntoventa.Location = new System.Drawing.Point(21, 55);
             this.Txt_puntoventa.Name = "Txt_puntoventa";
             this.Txt_puntoventa.ReadOnly = true;
-            this.Txt_puntoventa.Size = new System.Drawing.Size(264, 27);
+            this.Txt_puntoventa.Size = new System.Drawing.Size(264, 22);
             this.Txt_puntoventa.TabIndex = 1;
             this.Txt_puntoventa.Text = "Punto de Venta X";
             this.Txt_puntoventa.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
