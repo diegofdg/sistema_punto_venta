@@ -95,6 +95,7 @@ namespace Sol_PuntoVenta.Presentacion
             }
             catch (Exception ex)
             {
+
                 MessageBox.Show(ex.Message + ex.StackTrace);
             }
         }
@@ -108,6 +109,7 @@ namespace Sol_PuntoVenta.Presentacion
             }
             catch (Exception ex)
             {
+
                 MessageBox.Show(ex.Message + ex.StackTrace);
             }
         }
@@ -121,6 +123,7 @@ namespace Sol_PuntoVenta.Presentacion
             }
             catch (Exception ex)
             {
+
                 MessageBox.Show(ex.Message + ex.StackTrace);
             }
         }
@@ -134,6 +137,7 @@ namespace Sol_PuntoVenta.Presentacion
             }
             catch (Exception ex)
             {
+
                 MessageBox.Show(ex.Message + ex.StackTrace);
             }
         }
@@ -147,6 +151,7 @@ namespace Sol_PuntoVenta.Presentacion
             }
             catch (Exception ex)
             {
+
                 MessageBox.Show(ex.Message + ex.StackTrace);
             }
         }
@@ -256,11 +261,14 @@ namespace Sol_PuntoVenta.Presentacion
                 {
                     Dgv_PuntosVentas.Columns["OK"].ReadOnly = true;
                 }
+
             }
             catch (Exception ex)
             {
+
                 MessageBox.Show(ex.Message + ex.StackTrace);
             }
+
         }
 
         private void Selecciona_item()
@@ -365,6 +373,7 @@ namespace Sol_PuntoVenta.Presentacion
             this.Listado_sf("%");
             this.Listado_ad("%");
             this.Crear_Tabla_pv();
+
         }
 
         private void Btn_nuevo_Click(object sender, EventArgs e)
@@ -374,7 +383,7 @@ namespace Sol_PuntoVenta.Presentacion
             this.Estado_BotonesProcesos(true);
             this.Limpia_Texto();
             this.Estado_Texto(true);
-            this.Puntos_Ventas_OK(this.Estadoguarda, this.nCodigo);
+            this.Puntos_Ventas_OK(this.Estadoguarda, 0);
             this.Mostrar_img_prod_pred();
             this.nCodigo = 0;
             this.nCodigo_ma = 0;
@@ -489,6 +498,7 @@ namespace Sol_PuntoVenta.Presentacion
                 this.Estado_BotonesProcesos(false);
                 Tbc_principal.SelectedIndex = 1;
             }
+
         }
 
         private void Btn_eliminar_Click(object sender, EventArgs e)

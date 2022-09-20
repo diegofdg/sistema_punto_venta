@@ -251,5 +251,6 @@ namespace Sol_PuntoVenta.Presentacion
         {
             OpenForm(new Procesos.Frm_Cierres_Turnos());
         }
+
     }
 }

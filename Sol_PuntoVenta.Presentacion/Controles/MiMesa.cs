@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Sol_PuntoVenta.Negocio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -59,6 +60,40 @@ namespace Sol_PuntoVenta.Presentacion.Controles
             get { return Convert.ToInt32(Lbl_codigo_tu.Text); }
             set { Lbl_codigo_tu.Text = Convert.ToString(value); }
         }
+
+        public string Fecha_trabajo
+        {
+            get { return Lbl_fecha_trabajo.Text; }
+            set { Lbl_fecha_trabajo.Text = value; }
+        }
         #endregion
+
+        private void Pct_imagenmesa_Click(object sender, EventArgs e)
+        {
+            Procesos.Frm_Mesa_Abierta oFrm_mesaabierta = new Procesos.Frm_Mesa_Abierta();
+            oFrm_mesaabierta.Lbl_codigo_me.Text = Convert.ToString(Codigo);
+            oFrm_mesaabierta.Txt_mesaseleccionada.Text = Descripcion;
+            oFrm_mesaabierta.Txt_puntoventa.Text = Descripcion_pv;
+            oFrm_mesaabierta.Lbl_codigo_pv.Text = Convert.ToString(Codigo_pv);
+            oFrm_mesaabierta.Lbl_codigo_tu.Text = Convert.ToString(Codigo_tu);
+            oFrm_mesaabierta.Lbl_archivo_txt.Text = Convert.ToString(DateTime.Now.Ticks);
+            oFrm_mesaabierta.Lbl_fecha_trabajo.Text = Fecha_trabajo;
+            oFrm_mesaabierta.Btn_nuevopedido.Focus();
+            try
+            {
+                oFrm_mesaabierta.Dgv_listado_sf.DataSource = N_MesaAbierta.Listar_SubFamilias_RP(Codigo_pv);
+                //Dando formato al datagridview de SubFamilia
+                oFrm_mesaabierta.Dgv_listado_sf.Columns[0].Width = 250;
+                oFrm_mesaabierta.Dgv_listado_sf.Columns[0].HeaderText = "SUBFAMILIAS";
+                oFrm_mesaabierta.Dgv_listado_sf.Columns[1].Visible = false;
+
+                oFrm_mesaabierta.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + ex.StackTrace);
+            }
+
+        }
     }
 }
